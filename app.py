@@ -33,7 +33,7 @@ def index():
 @app.route('/<pagename>')
 def page(pagename):
     pagename = "pages/{}.html".format(pagename)
-    return render_template("page.html", page = pagename)
+    return render_template("base.html", page = pagename)
 
 
 if __name__ == '__main__':

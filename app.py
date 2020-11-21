@@ -2,33 +2,21 @@
 from flask import Flask, send_from_directory, render_template, redirect, abort
 import os
 from os import path
+import json
 
-days = {
-    '1': {'text': 'Vad är en jul utan julmat? Och vad är julmat utan potatis? Detta är en av många frågor vi Tenorer ofta tänker på. Låt oss därför inleda denna adventskalender med en sång till denna mest utsökta av kolhydratskällor.', 'video': 'ofKk_Etapq4'},
-    '2': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '3': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '4': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '5': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '6': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '7': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '8': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '9': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '10': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '11': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '12': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '13': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '14': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '15': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '16': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '17': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '18': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '19': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '20': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '21': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '22': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '23': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-    '24': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
-}
+database = json.loads(open("database.json", "r").read())
+
+def get_active_windows(show_until):
+    ret = {
+        "backgroundImageUrl": "/static/images/background.png",
+        "windows": {}
+    }
+
+    for number in database['windows']:
+        if int(number) <= show_until:
+            ret['windows'][number] = database['windows'][number]
+
+    return ret
 
 extra_dirs = ['static']
 extra_files = extra_dirs[:]
@@ -63,7 +51,9 @@ def favicon():
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+
+    data = get_active_windows(25)
+    return render_template("index.html", description=json.dumps(data))
 
 
 @app.route('/lucka/<number>')

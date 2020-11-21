@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <main class="kalender">
+    {% for i in range(1, 25) %}
+      <div id="{{ i }}" class="lucka-door">
+        <a href="{{ url_for('lucka', number=i) }}">{{ i }}</a>
+      </div>
+    {% endfor %}
+  </main>
+{% endblock %}

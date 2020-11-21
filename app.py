@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from flask import Flask, send_from_directory, render_template, redirect
 import os
 from os import path
@@ -14,30 +15,33 @@ for extra_dir in extra_dirs:
 
 app = Flask(__name__)
 
+
 @app.context_processor
 def inject_debug():
     return dict(debug=app.debug)
+
 
 @app.route('/static/<path:path>')
 def send_js(path):
     return send_from_directory('static', path)
 
+
 @app.route('/favicon.ico')
 def favicon():
     return redirect("/static/images/favicon.ico")
 
+
 @app.route('/')
 def index():
-    return redirect("/main")
+    return render_template("index.html")
 
-@app.route('/<pagename>')
-def page(pagename):
-    pagename = "pages/{}.html".format(pagename)
-    return render_template("base.html", page = pagename)
+
+@app.route('/lucka/<number>')
+def lucka(number):
+    return render_template("lucka.html", number=number)
 
 
 if __name__ == '__main__':
     app.jinja_env.auto_reload = True
     app.config['TEMPLATES_AUTO_RELOAD'] = True
     app.run(extra_files=extra_files, debug=True, host="0.0.0.0")
-

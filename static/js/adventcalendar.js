@@ -14,20 +14,17 @@ class AdventCalendar {
 
   createWindow(label, { position, contentUrls }) {
     if (this.windows >= 24) {
-      throw new Error("Only 24 windows in an advent calendar, yao!");
+      throw new Error("Only 24 windows in an advent calendar yao!");
     }
-    const { offset, size } = position;
-
-    console.log(offset, size);
 
     const window = document.createElement("div");
     this.container.appendChild(window);
 
     window.classList.add("window");
-    window.style.left = offset.x + "px";
-    window.style.top = offset.y + "px";
-    window.style.width = size.width + "px";
-    window.style.height = size.height + "px";
+    window.style.left = position.x + "px";
+    window.style.top = position.y + "px";
+    window.style.width = position.width + "px";
+    window.style.height = position.height + "px";
 
     const hatch = document.createElement("div");
     window.appendChild(hatch);
@@ -47,7 +44,8 @@ class AdventCalendar {
     hatch.classList.add("hatch");
 
     hatch.style.backgroundImage = `url(${this.backgroundImageUrl})`;
-    hatch.style.backgroundPosition = `-${offset.x + 1}px -${offset.y + 1}px`;
+    hatch.style.backgroundPosition = `-${position.x + 1}px -${position.y +
+      1}px`;
 
     hatch.classList.add("left");
 

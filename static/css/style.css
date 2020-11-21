@@ -5,6 +5,11 @@
   transform-style: preserve-3d;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
 .window {
   position: absolute;
   background: white;

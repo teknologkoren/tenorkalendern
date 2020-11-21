@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block scripts %}
-  <script type="text/javascript" srcs="/static/js/adventcalendar.js"></script>
+  <script type="text/javascript" src="/static/js/adventcalendar.js"></script>
 {% endblock %}
 
 {% block content %}
   {{description}}
   <main class="kalender"></main>
   <script>
-    const { backgroundImageUrl, windows } = {{ description }};
+    const { backgroundImageUrl, windows } = {{ description|safe }};
 
     const calendar = new AdventCalendar(backgroundImageUrl);
 

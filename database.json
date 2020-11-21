@@ -4,7 +4,7 @@
 		"1": {
 			"video": "m-r84fKhI0Q",
 			"text": "some example text",
-			"position": {"x": 100, "y":50, "width": 20, "height": 30},
+			"position": {"x": 100, "y":50, "width": 150, "height": 140},
 			"contentUrls": {
 				"imgUrl" : "/static/images/luckor/1.png",
 				"linkUrl": "/lucka/1"
@@ -13,7 +13,7 @@
 		"2": {
 			"video": "m-r84fKhI0Q",
 			"text": "some example text",
-			"position": {"x": 200, "y":50, "width": 20, "height": 30},
+			"position": {"x": 400, "y":250, "width": 150, "height": 150},
 			"contentUrls": {
 				"imgUrl" : "/static/images/luckor/2.png",
 				"linkUrl": "/lucka/2"

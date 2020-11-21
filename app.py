@@ -68,13 +68,13 @@ def index():
 
 @app.route('/lucka/<number>')
 def lucka(number):
+    date = int(number)
     try:
-        date = int(number)
         if date <= 24:
-            return render_template('lucka.html', day_number=date, text=days[day_number]['text'], video=days[day_number]['video'])
-
+            return render_template('lucka.html', day_number=date, text=days[number]['text'], video=days[number]['video'])
     except:
         pass
+
 
     abort(404)
 

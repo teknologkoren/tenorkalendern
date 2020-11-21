@@ -4,30 +4,30 @@ import os
 from os import path
 
 days = {
-    '1': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '2': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '3': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '4': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '5': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '6': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '7': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '8': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '9': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '10': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '11': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '12': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '13': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '14': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '15': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '16': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '17': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '18': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '19': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '20': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '21': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '22': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '23': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
-    '24': {'text': 'Blah blah', 'video': 'KfGiMxNqYrM'},
+    '1': {'text': 'Vad är en jul utan julmat? Och vad är julmat utan potatis? Detta är en av många frågor vi Tenorer ofta tänker på. Låt oss därför inleda denna adventskalender med en sång till denna mest utsökta av kolhydratskällor.', 'video': 'ofKk_Etapq4'},
+    '2': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '3': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '4': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '5': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '6': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '7': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '8': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '9': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '10': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '11': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '12': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '13': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '14': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '15': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '16': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '17': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '18': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '19': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '20': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '21': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '22': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '23': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
+    '24': {'text': 'Blah blah', 'video': 'ofKk_Etapq4'},
 }
 
 extra_dirs = ['static']
@@ -71,7 +71,7 @@ def lucka(number):
     date = int(number)
     try:
         if date <= 24:
-            return render_template('lucka.html', day_number=date, text=days[number]['text'], video=days[number]['video'])
+            return render_template('lucka.html', number=number, text=days[number]['text'], video=days[number]['video'])
     except:
         pass
 

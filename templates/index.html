@@ -1,11 +1,20 @@
 {% extends "base.html" %}
 
+{% block scripts %}
+  <script type="text/javascript" srcs="/static/js/adventcalendar.js"></script>
+{% endblock %}
+
 {% block content %}
-  <main class="kalender">
-    {% for i in range(1, 25) %}
-      <div id="{{ i }}" class="lucka-door">
-        <a href="{{ url_for('lucka', number=i) }}">{{ i }}</a>
-      </div>
-    {% endfor %}
-  </main>
+  <main class="kalender"></main>
+  <script>
+    const { backgroundImageUrl, windows } = {{ description }};
+
+    const calendar = new AdventCalendar(backgroundImageUrl);
+
+    Object.entries(windows).forEach(([key, description]) => {
+      calendar.createWindow(key, description);
+    });
+
+    document.querySelector('main').appendChild(calendar.container);
+  </script>
 {% endblock %}

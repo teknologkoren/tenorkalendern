@@ -1,8 +1,13 @@
 /** Just does it all, returning an element containing the calendar. */
 declare function createIt(options: {
     backgroundImageUrl: string,
-    windows: Array<{position: Position, contentUrls?: ContentUrls}>,
+    windows: Array<WindowDescription>,
 }): HTMLElement;
+
+declare interface WindowDescription{
+    position: Position;
+    contentUrls?: ContentUrls;
+}
 
 /** Creates an advent calendar to which windows can be added. */
 declare function createAdventCalendar(options: {
@@ -20,10 +25,12 @@ declare interface Calendar {
      * thrown.
      *
      * Example:
-     *   calendar.addWindow(
-     *       {x: 10, y: 20, width: 100, height: 80}, {imageUrl, linkUrl});
+     *   calendar.addWindow({
+     *       position: {x: 10, y: 20, width: 100, height: 80},
+     *       contentUrls: {imageUrl, linkUrl},
+     *   });
      */
-    addWindow(position: Position, contentUrls?: ContentUrls): CalendarWindow;
+    addWindow(description: WindowDescription): CalendarWindow;
 }
 
 declare interface Position {

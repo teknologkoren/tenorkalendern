@@ -1,5 +1,5 @@
 class AdventCalendar {
-  constructor(backgroundImageUrl) {
+  constructor(backgroundImageUrl, storage) {
     this.backgroundImageUrl = backgroundImageUrl;
 
     this.container = document.createElement("div");
@@ -8,6 +8,9 @@ class AdventCalendar {
     this.background = document.createElement("img");
     this.background.src = backgroundImageUrl;
     this.container.appendChild(this.background);
+
+    this.storage = storage;
+    this.opened = new Set(JSON.parse(storage.getItem("opened") || "[]"));
 
     this.windows = 0;
   }
@@ -32,12 +35,21 @@ class AdventCalendar {
     if (contentUrls) {
       const link = document.createElement("a");
       link.classList.add("link");
+      if (this.opened.has(label)) {
+        hatch.classList.add("open");
+      }
       link.href = contentUrls.linkUrl;
       link.style.backgroundImage = `url(${contentUrls.imageUrl})`;
       window.appendChild(link);
 
       hatch.onclick = () => {
         hatch.classList.toggle("open");
+        // If we couldn't remove the lable from opened, it wasn't open meaning
+        // it is open now. So we should add it.
+        if (!this.opened.delete(label)) {
+          this.opened.add(label);
+        }
+        this.storage.setItem("opened", JSON.stringify(Array.from(this.opened)));
       };
     }
 

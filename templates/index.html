@@ -9,7 +9,7 @@
   <script>
     const { backgroundImageUrl, windows } = {{ description|safe }};
 
-    const calendar = new AdventCalendar(backgroundImageUrl);
+    const calendar = new AdventCalendar(backgroundImageUrl, localStorage);
 
     Object.entries(windows).forEach(([key, description]) => {
       calendar.createWindow(key, description);

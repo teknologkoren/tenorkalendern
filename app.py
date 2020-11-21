@@ -8,7 +8,7 @@ database = json.loads(open("database.json", "r").read())
 
 def get_active_windows(show_until):
     ret = {
-        "backgroundImageUrl": "/static/images/background.png",
+        "backgroundImageUrl": database['backgroundImageUrl'],
         "windows": {}
     }
 

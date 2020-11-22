@@ -61,11 +61,11 @@ def index():
 @app.route('/lucka/<number>')
 def lucka(number):
     try:
-        date = int(number)
-        if date > date.today().day:
+        day = int(number)
+        if day > date.today().day:
             return render_template('not_yet.html')
 
-        if date < len(database['windows']):
+        if day < len(database['windows']):
             lucka = database['windows'][number]
             return render_template('lucka.html', number=number, text=lucka['text'], video=lucka['video'])
     except Exception as e:

@@ -8,7 +8,8 @@ from datetime import date
 database = json.loads(open("database.json", "r").read())
 
 def today():
-    return (date.now() - date(year=2020, month=12, day=1)).days
+    return 24
+    #return (date.today() - date(year=2020, month=12, day=1)).days + 1
 
 def get_active_windows(show_until):
     ret = {

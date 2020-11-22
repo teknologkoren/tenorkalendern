@@ -3,6 +3,7 @@ from flask import Flask, send_from_directory, render_template, redirect, abort
 import os
 from os import path
 import json
+from datetime import date
 
 database = json.loads(open("database.json", "r").read())
 
@@ -53,8 +54,7 @@ def favicon():
 
 @app.route('/')
 def index():
-
-    data = get_active_windows(2)
+    data = get_active_windows(date.today().day)
     return render_template("index.html", description=json.dumps(data))
 
 
@@ -62,8 +62,12 @@ def index():
 def lucka(number):
     try:
         date = int(number)
-        if date <= 24:
-            return render_template('lucka.html', number=number, text=database['windows'][number]['text'], video=database['windows'][number]['video'])
+        if date > date.today().day:
+            return render_template('not_yet.html')
+
+        if date < len(database['windows']):
+            lucka = database['windows'][number]
+            return render_template('lucka.html', number=number, text=lucka['text'], video=lucka['video'])
     except Exception as e:
         print(e)
         pass

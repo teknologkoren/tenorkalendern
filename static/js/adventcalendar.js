@@ -7,6 +7,7 @@ class AdventCalendar {
 
     this.background = document.createElement("img");
     this.background.src = backgroundImageUrl;
+    this.background.setAttribute('draggable', false);
     this.container.appendChild(this.background);
 
     this.storage = storage;

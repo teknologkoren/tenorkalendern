@@ -18,6 +18,11 @@
 				"imgUrl" : "/static/images/luckor/2.png",
 				"linkUrl": "/lucka/2"
 			}
+		},
+		"3": {
+			"video": "m-r84fKhI0Q",
+			"text": "some example text",
+			"position": {"x": 600, "y":50, "width": 150, "height": 140}
 		}
 	}
 }

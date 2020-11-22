@@ -3,7 +3,7 @@
 	"windows":{
     "1": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/1.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/1"
         },
         "position": {
@@ -17,7 +17,7 @@
     },
     "2": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/2.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/2"
         },
         "position": {
@@ -31,7 +31,7 @@
     },
     "3": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/3.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/3"
         },
         "position": {
@@ -45,7 +45,7 @@
     },
     "4": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/4.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/4"
         },
         "position": {
@@ -59,7 +59,7 @@
     },
     "5": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/5.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/5"
         },
         "position": {
@@ -73,7 +73,7 @@
     },
     "6": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/6.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/6"
         },
         "position": {
@@ -87,7 +87,7 @@
     },
     "7": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/7.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/7"
         },
         "position": {
@@ -101,7 +101,7 @@
     },
     "8": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/8.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/8"
         },
         "position": {
@@ -115,7 +115,7 @@
     },
     "9": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/9.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/9"
         },
         "position": {
@@ -129,7 +129,7 @@
     },
     "10": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/10.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/10"
         },
         "position": {
@@ -143,7 +143,7 @@
     },
     "11": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/11.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/11"
         },
         "position": {
@@ -157,7 +157,7 @@
     },
     "12": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/12.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/12"
         },
         "position": {
@@ -171,7 +171,7 @@
     },
     "13": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/13.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/13"
         },
         "position": {
@@ -185,7 +185,7 @@
     },
     "14": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/14.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/14"
         },
         "position": {
@@ -199,7 +199,7 @@
     },
     "15": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/15.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/15"
         },
         "position": {
@@ -213,7 +213,7 @@
     },
     "16": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/16.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/16"
         },
         "position": {
@@ -227,7 +227,7 @@
     },
     "17": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/17.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/17"
         },
         "position": {
@@ -241,7 +241,7 @@
     },
     "18": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/18.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/18"
         },
         "position": {
@@ -255,7 +255,7 @@
     },
     "19": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/19.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/19"
         },
         "position": {
@@ -269,7 +269,7 @@
     },
     "20": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/20.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/20"
         },
         "position": {
@@ -283,7 +283,7 @@
     },
     "21": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/21.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/21"
         },
         "position": {
@@ -297,7 +297,7 @@
     },
     "22": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/22.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/22"
         },
         "position": {
@@ -311,7 +311,7 @@
     },
     "23": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/23.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/23"
         },
         "position": {
@@ -325,7 +325,7 @@
     },
     "24": {
         "contentUrls": {
-            "imgUrl": "/static/images/luckor/24.png",
+            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
             "linkUrl": "/lucka/24"
         },
         "position": {

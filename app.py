@@ -8,10 +8,7 @@ from datetime import date
 database = json.loads(open("database.json", "r").read())
 
 def today():
-    # After the Dec 24th 2020, it's always the 24th. :D
-    if date.today() > date(2020, 12, 24):
-        return 24
-    return date.today().day
+    return (date.now() - date(year=2020, month=12, day=1)).days
 
 def get_active_windows(show_until):
     ret = {

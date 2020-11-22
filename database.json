@@ -1,32 +1,341 @@
 {
 	"backgroundImageUrl": "/static/images/background.jpg",
 	"windows":{
-		"1": {
-			"video": "m-r84fKhI0Q",
-			"text": "some example text",
-			"position": {"x": 100, "y":50, "width": 150, "height": 140},
-			"contentUrls": {
-				"imgUrl" : "/static/images/luckor/1.png",
-				"linkUrl": "/lucka/1"
-			}
-		},
-		"2": {
-			"video": "m-r84fKhI0Q",
-			"text": "some example text",
-			"position": {"x": 400, "y":250, "width": 150, "height": 150},
-			"contentUrls": {
-				"imgUrl" : "/static/images/luckor/2.png",
-				"linkUrl": "/lucka/2"
-			}
-		},
-		"3": {
-			"video": "m-r84fKhI0Q",
-			"text": "some example text",
-			"position": {"x": 600, "y":50, "width": 150, "height": 140},
-			"contentUrls": {
-				"imgUrl" : "/static/images/luckor/3.png",
-				"linkUrl": "/lucka/3"
-			}
-		}
+    "1": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/1.png",
+            "linkUrl": "/lucka/1"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 776,
+            "y": 680
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "2": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/2.png",
+            "linkUrl": "/lucka/2"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 250,
+            "y": 450
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "3": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/3.png",
+            "linkUrl": "/lucka/3"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 501,
+            "y": 290
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "4": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/4.png",
+            "linkUrl": "/lucka/4"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 1002,
+            "y": 164
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "5": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/5.png",
+            "linkUrl": "/lucka/5"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 210,
+            "y": 281
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "6": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/6.png",
+            "linkUrl": "/lucka/6"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 620,
+            "y": 420
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "7": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/7.png",
+            "linkUrl": "/lucka/7"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 60,
+            "y": 220
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "8": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/8.png",
+            "linkUrl": "/lucka/8"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 513,
+            "y": 730
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "9": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/9.png",
+            "linkUrl": "/lucka/9"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 910,
+            "y": 95
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "10": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/10.png",
+            "linkUrl": "/lucka/10"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 143,
+            "y": 762
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "11": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/11.png",
+            "linkUrl": "/lucka/11"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 525,
+            "y": 68
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "12": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/12.png",
+            "linkUrl": "/lucka/12"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 1030,
+            "y": 480
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "13": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/13.png",
+            "linkUrl": "/lucka/13"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 596,
+            "y": 581
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "14": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/14.png",
+            "linkUrl": "/lucka/14"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 231,
+            "y": 135
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "15": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/15.png",
+            "linkUrl": "/lucka/15"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 350,
+            "y": 743
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "16": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/16.png",
+            "linkUrl": "/lucka/16"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 775,
+            "y": 220
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "17": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/17.png",
+            "linkUrl": "/lucka/17"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 430,
+            "y": 400
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "18": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/18.png",
+            "linkUrl": "/lucka/18"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 700,
+            "y": 103
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "19": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/19.png",
+            "linkUrl": "/lucka/19"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 922,
+            "y": 352
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "20": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/20.png",
+            "linkUrl": "/lucka/20"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 360,
+            "y": 595
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "21": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/21.png",
+            "linkUrl": "/lucka/21"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 340,
+            "y": 260
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "22": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/22.png",
+            "linkUrl": "/lucka/22"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 348,
+            "y": 125
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "23": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/23.png",
+            "linkUrl": "/lucka/23"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 86,
+            "y": 584
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    },
+    "24": {
+        "contentUrls": {
+            "imgUrl": "/static/images/luckor/24.png",
+            "linkUrl": "/lucka/24"
+        },
+        "position": {
+            "height": 100,
+            "width": 100,
+            "x": 804,
+            "y": 420
+        },
+        "text": "some example text",
+        "video": "m-r84fKhI0Q"
+    }
 	}
 }

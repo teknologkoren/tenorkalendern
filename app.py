@@ -12,6 +12,7 @@ def today():
     #return (date.today() - date(year=2020, month=12, day=1)).days + 1
 
 def get_active_windows(show_until):
+    database = json.loads(open("database.json", "r").read())
     ret = {
         "backgroundImageUrl": database['backgroundImageUrl'],
         "windows": {}

@@ -13,8 +13,10 @@ def get_active_windows(show_until):
     }
 
     for number in database['windows']:
-        if int(number) <= show_until:
-            ret['windows'][number] = database['windows'][number]
+        ret['windows'][number] = {}
+        ret['windows'][number]['position'] = database['windows'][number]['position']
+        if int(number) <= show_until and 'contentUrls' in database['windows'][number]:
+            ret['windows'][number]['contentUrls'] = database['windows'][number]['contentUrls']
 
     return ret
 
@@ -52,7 +54,7 @@ def favicon():
 @app.route('/')
 def index():
 
-    data = get_active_windows(25)
+    data = get_active_windows(2)
     return render_template("index.html", description=json.dumps(data))
 
 

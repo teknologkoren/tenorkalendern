@@ -67,7 +67,7 @@ def lucka(number):
     try:
         day = int(number)
         if day > today():
-            return render_template('not_yet.html')
+            return render_template('425.html')
         if number in database['windows']:
             lucka = database['windows'][number]
             return render_template('lucka.html', number=number, text=lucka['text'], video=lucka['video'])

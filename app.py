@@ -7,6 +7,9 @@ from datetime import date
 
 database = json.loads(open("database.json", "r").read())
 
+def today():
+    return date.today().day
+
 def get_active_windows(show_until):
     ret = {
         "backgroundImageUrl": database['backgroundImageUrl'],
@@ -54,7 +57,7 @@ def favicon():
 
 @app.route('/')
 def index():
-    data = get_active_windows(date.today().day)
+    data = get_active_windows(today())
     return render_template("index.html", description=json.dumps(data))
 
 
@@ -62,7 +65,7 @@ def index():
 def lucka(number):
     try:
         day = int(number)
-        if day > date.today().day:
+        if day > today():
             return render_template('not_yet.html')
 
         if day < len(database['windows']):

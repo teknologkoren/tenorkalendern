@@ -5,6 +5,9 @@
 {% endblock %}
 
 {% block content %}
+  <header>
+    <h1>Tenorkalendern 2020</h1>
+  </header>
   <main class="kalender"></main>
   <script>
     const { backgroundImageUrl, windows } = {{ description|safe }};

@@ -27,7 +27,7 @@
             "y": 450
         },
         "text": "some example text",
-        "video": "m-r84fKhI0Q"
+        "video": "RUrEDuKCiR8"
     },
     "3": {
         "contentUrls": {
@@ -51,7 +51,7 @@
         "position": {
             "height": 100,
             "width": 100,
-            "x": 1002,
+            "x": 1052,
             "y": 164
         },
         "text": "some example text",
@@ -65,8 +65,8 @@
         "position": {
             "height": 100,
             "width": 100,
-            "x": 210,
-            "y": 281
+            "x": 60,
+            "y": 380
         },
         "text": "some example text",
         "video": "m-r84fKhI0Q"
@@ -107,7 +107,7 @@
         "position": {
             "height": 100,
             "width": 100,
-            "x": 513,
+            "x": 1013,
             "y": 730
         },
         "text": "some example text",
@@ -122,7 +122,7 @@
             "height": 100,
             "width": 100,
             "x": 910,
-            "y": 95
+            "y":100
         },
         "text": "some example text",
         "video": "m-r84fKhI0Q"
@@ -135,7 +135,7 @@
         "position": {
             "height": 100,
             "width": 100,
-            "x": 143,
+            "x": 600,
             "y": 762
         },
         "text": "some example text",
@@ -191,8 +191,8 @@
         "position": {
             "height": 100,
             "width": 100,
-            "x": 231,
-            "y": 135
+            "x": 150,
+            "y": 70
         },
         "text": "some example text",
         "video": "m-r84fKhI0Q"
@@ -205,8 +205,8 @@
         "position": {
             "height": 100,
             "width": 100,
-            "x": 350,
-            "y": 743
+            "x": 700,
+            "y": 103
         },
         "text": "some example text",
         "video": "m-r84fKhI0Q"
@@ -219,8 +219,8 @@
         "position": {
             "height": 100,
             "width": 100,
-            "x": 775,
-            "y": 220
+            "x": 740,
+            "y": 260
         },
         "text": "some example text",
         "video": "m-r84fKhI0Q"
@@ -247,8 +247,8 @@
         "position": {
             "height": 100,
             "width": 100,
-            "x": 700,
-            "y": 103
+            "x": 250,
+            "y": 703
         },
         "text": "some example text",
         "video": "m-r84fKhI0Q"
@@ -289,7 +289,7 @@
         "position": {
             "height": 100,
             "width": 100,
-            "x": 340,
+            "x": 260,
             "y": 260
         },
         "text": "some example text",

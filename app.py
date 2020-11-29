@@ -26,30 +26,16 @@ def get_active_windows(show_until):
 
     return ret
 
-extra_dirs = ['static']
-extra_files = extra_dirs[:]
-for extra_dir in extra_dirs:
-    for dirname, dirs, files in os.walk(extra_dir):
-        for filename in files:
-            filename = path.join(dirname, filename)
-            if path.isfile(filename):
-                extra_files.append(filename)
-
-
-app = Flask(__name__)
-
 @app.errorhandler(404)
 def page_not_found(error):
-    return (render_template('404.html', title = '404'), 404)
+    return (render_template('404.html', title='404'), 404)
 
 @app.context_processor
 def inject_debug():
-     return dict(debug=app.debug)
-
-
-@app.route('/static/<path:path>')
-def send_js(path):
-     return send_from_directory('static', path)
+     return dict(
+         debug=app.debug,
+         live_reload=app.config.get('LIVE_RELOAD')
+     )
 
 
 @app.route('/favicon.ico')
@@ -77,6 +63,23 @@ def lucka(number):
         pass
 
     abort(404)
+
+
+if app.config.get('LIVE_RELOAD'):
+    extra_dirs = ['static']
+    extra_files = extra_dirs[:]
+    for extra_dir in extra_dirs:
+        for dirname, dirs, files in os.walk(extra_dir):
+            for filename in files:
+                filename = path.join(dirname, filename)
+                if path.isfile(filename):
+                    extra_files.append(filename)
+
+    @app.route('/static/<path:path>')
+    def send_js(path):
+        return send_from_directory('static', path)
+else:
+    extra_files = None
 
 
 if __name__ == '__main__':

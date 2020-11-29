@@ -11,14 +11,15 @@
 }
 
 html {
-  background: linear-gradient(180deg, rgba(82,5,6,1) 0%, rgba(134,18,18,1) 62%, rgba(192,31,32,1) 100%);
+  background-image:
+    url('/static/images/snöflingor.png'),
+    linear-gradient(180deg, rgba(82,5,6,1) 0%, rgba(134,18,18,1) 62%, rgba(192,31,32,1) 100%);
 }
 
 body {
   font-family: 'mountains_of_christmasregular';
   color: #fff;
   min-height: 100vh;
-  background-image: url('/static/images/snöflingor.png');
   font-size: 1.3em;
 }
 

@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <main class="lucka">
-    <h1>Lucka {{ number }}</h1>
+  <header class="lucka">
     <a href="/">Tillbaka till kalendern</a>
+    <h1>Lucka {{ number }}</h1>
+  </header>
+  <main class="lucka">
     <p>{{ text }}</p>
     <div class="video-wrapper">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

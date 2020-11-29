@@ -91,7 +91,7 @@ footer {
   transform: rotateY(120deg);
 }
 
-main.lucka{
+.lucka{
   display: block;
   flex-direction: column;
   justify-content: center;
@@ -100,8 +100,7 @@ main.lucka{
   margin-right: auto;
 }
 
-
-.lucka h1{
+header.lucka {
   text-align: center;
 }
 
@@ -110,6 +109,7 @@ main.lucka{
   margin-right: auto;
   text-align: center;
 }
+
 a:link {color: #30c1f0;}
 a:visited {color: #30c1f0;}
 a:hover {color: white;}

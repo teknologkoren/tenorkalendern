@@ -4,6 +4,11 @@ import os
 from os import path
 import json
 from datetime import date
+from lib import cache_bust
+
+app = Flask(__name__)
+app.config.from_object('config')
+cache_bust.init_cache_busting(app)
 
 database = json.loads(open("database.json", "r").read())
 

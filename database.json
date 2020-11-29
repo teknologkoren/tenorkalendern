@@ -3,7 +3,7 @@
 	"windows":{
     "1": {
         "contentUrls": {
-            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
+            "imageUrl": "/static/images/luckor/lucka1.png",
             "linkUrl": "/lucka/1"
         },
         "position": {
@@ -17,7 +17,7 @@
     },
     "2": {
         "contentUrls": {
-            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
+            "imageUrl": "/static/images/luckor/lucka2.png",
             "linkUrl": "/lucka/2"
         },
         "position": {
@@ -31,7 +31,7 @@
     },
     "3": {
         "contentUrls": {
-            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
+            "imageUrl": "/static/images/luckor/lucka3.png",
             "linkUrl": "/lucka/3"
         },
         "position": {
@@ -45,7 +45,7 @@
     },
     "4": {
         "contentUrls": {
-            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
+            "imageUrl": "/static/images/luckor/lucka4.png",
             "linkUrl": "/lucka/4"
         },
         "position": {
@@ -59,7 +59,7 @@
     },
     "5": {
         "contentUrls": {
-            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
+            "imageUrl": "/static/images/luckor/lucka5.png",
             "linkUrl": "/lucka/5"
         },
         "position": {
@@ -73,7 +73,7 @@
     },
     "6": {
         "contentUrls": {
-            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
+            "imageUrl": "/static/images/luckor/lucka6.png",
             "linkUrl": "/lucka/6"
         },
         "position": {
@@ -87,7 +87,7 @@
     },
     "7": {
         "contentUrls": {
-            "imageUrl": "/static/images/luckor/lucka_placeholder.png",
+            "imageUrl": "/static/images/luckor/lucka7.png",
             "linkUrl": "/lucka/7"
         },
         "position": {

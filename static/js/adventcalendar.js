@@ -42,6 +42,7 @@ class AdventCalendar {
       link.href = contentUrls.linkUrl;
       link.style.backgroundImage = `url(${contentUrls.imageUrl})`;
       window.appendChild(link);
+      setTimeout(function(){ link.style.display = "block"; }, 500);
 
       hatch.onclick = () => {
         hatch.classList.toggle("open");

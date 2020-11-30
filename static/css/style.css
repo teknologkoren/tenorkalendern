@@ -24,6 +24,7 @@ body {
 
 .kalender {
   width: 1300px;
+  min-width: 100%;
 }
 
 .calendar {

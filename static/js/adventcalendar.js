@@ -38,11 +38,13 @@ class AdventCalendar {
       link.classList.add("link");
       if (this.opened.has(label)) {
         hatch.classList.add("open");
+        link.style.display = "block";
+      } else {
+        setTimeout(function(){ link.style.display = "block"; }, 500);
       }
       link.href = contentUrls.linkUrl;
       link.style.backgroundImage = `url(${contentUrls.imageUrl})`;
       window.appendChild(link);
-      setTimeout(function(){ link.style.display = "block"; }, 500);
 
       hatch.onclick = () => {
         hatch.classList.toggle("open");
